@@ -1,0 +1,32 @@
+$color-fondo: #243242;
+$color-texto: #ebebeb;
+$color-destacado: #ffd30f;
+$color-tablero: #607286;
+
+#drum-machine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-fondo ;
+    height: 100vh;
+    width: 100%;
+}
+#display{
+    background-color: $color-tablero;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 10px -6px black;
+}
+
+#drum-bank{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    grid-gap: 10px;
+    align-content: center;
+    justify-content: center;
+}
+.drum-pad:hover{
+ width: 105px;
+}
